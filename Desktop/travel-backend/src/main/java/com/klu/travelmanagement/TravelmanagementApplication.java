@@ -2,19 +2,12 @@ package com.klu.travelmanagement;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class TravelmanagementApplication extends SpringBootServletInitializer {
+public class TravelmanagementApplication {
 
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(TravelmanagementApplication.class);
-    }
+	public static void main(String[] args) {
+		SpringApplication.run(TravelmanagementApplication.class, args);
+		System.out.println("be");	}
 
-    public static void main(String[] args) {
-        SpringApplication.run(TravelmanagementApplication.class, args);
-        System.out.println("tmsbe");
-    }
 }
